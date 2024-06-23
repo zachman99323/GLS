@@ -1,3 +1,12 @@
--- This module serves as the root of the `Gls` library.
--- Import modules here that should be built as part of the library.
-import «Gls».Basic
+import Mathlib
+
+import Gls.trivial_lemmas_sets
+import Gls.trivial_lemmas_graphs
+open triv_lem_sets
+open trivial_lems_graphs
+
+set_option linter.unusedVariables false
+
+open Set
+open scoped Classical
+open Finset BigOperators
